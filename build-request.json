@@ -1,0 +1,42 @@
+{
+  "kind": "build_request",
+  "title": "Replace logo with user-provided Archak image",
+  "projectName": "Archak Seva",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-4",
+      "text": "Replace the existing generated logo/emblem in the Navigation bar and Footer with the user-provided 'ARCHAK' logo image. Save the uploaded image as a static asset at frontend/public/assets/generated/logo.dim_300x120.png and update the <img> src references in Navigation.tsx and Footer.tsx to point to this new file.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Change logo to this"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The new 'ARCHAK' logo (green bubble-text wordmark on white background) is displayed in the navigation bar in place of the old generated logo.",
+        "The same new logo is displayed in the footer wherever the logo was previously shown.",
+        "The logo image file is stored at frontend/public/assets/generated/logo.dim_300x120.png.",
+        "No broken image references remain for the old logo."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui.",
+    "Do not alter any other section or design system; only the logo image references should change."
+  ],
+  "nonGoals": [
+    "Redesigning the navigation bar or footer layout.",
+    "Changing the color theme or typography.",
+    "Any backend changes."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Green bubble-text wordmark reading 'ARCHAK' on a transparent/white background, matching the uploaded IMG_5709.jpeg style (logo.dim_300x120.png)"
+    ],
+    "edits": []
+  }
+}

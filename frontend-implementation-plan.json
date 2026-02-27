@@ -1,0 +1,34 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Replace logo with user-provided Archak image",
+  "requirements": [
+    {
+      "id": "REQ-4",
+      "summary": "Replace existing generated logo in Navigation bar and Footer with user-provided 'ARCHAK' logo image",
+      "acceptanceCriteria": [
+        "The new 'ARCHAK' logo (green bubble-text wordmark on white background) is displayed in the navigation bar in place of the old generated logo.",
+        "The same new logo is displayed in the footer wherever the logo was previously shown.",
+        "The logo image file is stored at frontend/public/assets/generated/logo.dim_300x120.png.",
+        "No broken image references remain for the old logo."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/logo.dim_300x120.png",
+          "operation": "create",
+          "description": "Save the user-provided 'ARCHAK' logo (green bubble-text wordmark on white/transparent background) as a static asset at this exact file path. This image will replace the existing generated logo throughout the application."
+        },
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "modify",
+          "description": "Update the <img> src attribute to point to the new logo file at frontend/public/assets/generated/logo.dim_300x120.png (reference as /assets/generated/logo.dim_300x120.png in the src). Remove any references to the old generated logo file. Ensure the logo displays correctly in both desktop and mobile navigation views."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the <img> src attribute to point to the new logo file at frontend/public/assets/generated/logo.dim_300x120.png (reference as /assets/generated/logo.dim_300x120.png in the src). Remove any references to the old generated logo file. Ensure the logo displays correctly alongside the tagline and other footer content."
+        }
+      ]
+    }
+  ]
+}

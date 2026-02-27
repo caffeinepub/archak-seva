@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Warm earthy palette — saffron, terracotta, cream, forest green */
+    --background: 0.97 0.012 80;          /* warm cream */
+    --foreground: 0.22 0.03 50;           /* deep warm brown */
+
+    --card: 0.99 0.008 75;                /* off-white card */
+    --card-foreground: 0.22 0.03 50;
+
+    --popover: 0.99 0.008 75;
+    --popover-foreground: 0.22 0.03 50;
+
+    --primary: 0.65 0.18 55;              /* deep saffron/amber */
+    --primary-foreground: 0.99 0.005 80;
+
+    --secondary: 0.88 0.06 75;            /* warm sand */
+    --secondary-foreground: 0.28 0.04 50;
+
+    --muted: 0.93 0.02 75;               /* light cream */
+    --muted-foreground: 0.50 0.04 60;
+
+    --accent: 0.42 0.10 145;             /* forest green */
+    --accent-foreground: 0.97 0.008 80;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.88 0.03 70;
+    --input: 0.88 0.03 70;
+    --ring: 0.65 0.18 55;
+
+    /* Custom semantic tokens */
+    --saffron: 0.72 0.20 60;
+    --saffron-deep: 0.60 0.22 48;
+    --terracotta: 0.55 0.16 35;
+    --cream: 0.97 0.012 80;
+    --cream-dark: 0.92 0.025 75;
+    --forest: 0.42 0.10 145;
+    --forest-light: 0.55 0.12 145;
+    --warm-brown: 0.35 0.06 50;
+
+    --chart-1: 0.72 0.20 60;
+    --chart-2: 0.42 0.10 145;
+    --chart-3: 0.55 0.16 35;
+    --chart-4: 0.65 0.18 55;
+    --chart-5: 0.50 0.12 80;
+
+    --sidebar: 0.97 0.012 80;
+    --sidebar-foreground: 0.22 0.03 50;
+    --sidebar-primary: 0.65 0.18 55;
+    --sidebar-primary-foreground: 0.99 0.005 80;
+    --sidebar-accent: 0.93 0.02 75;
+    --sidebar-accent-foreground: 0.22 0.03 50;
+    --sidebar-border: 0.88 0.03 70;
+    --sidebar-ring: 0.65 0.18 55;
+  }
+
+  .dark {
+    --background: 0.18 0.03 50;
+    --foreground: 0.95 0.015 75;
+    --card: 0.22 0.03 50;
+    --card-foreground: 0.95 0.015 75;
+    --popover: 0.25 0.03 50;
+    --popover-foreground: 0.95 0.015 75;
+    --primary: 0.72 0.20 60;
+    --primary-foreground: 0.18 0.03 50;
+    --secondary: 0.28 0.04 50;
+    --secondary-foreground: 0.95 0.015 75;
+    --muted: 0.28 0.04 50;
+    --muted-foreground: 0.65 0.04 65;
+    --accent: 0.50 0.12 145;
+    --accent-foreground: 0.95 0.015 75;
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.205 0 0;
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.72 0.20 60;
+    --sidebar: 0.22 0.03 50;
+    --sidebar-foreground: 0.95 0.015 75;
+    --sidebar-primary: 0.72 0.20 60;
+    --sidebar-primary-foreground: 0.18 0.03 50;
+    --sidebar-accent: 0.28 0.04 50;
+    --sidebar-accent-foreground: 0.95 0.015 75;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.72 0.20 60;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+  .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+  .text-saffron {
+    color: oklch(var(--saffron));
+  }
+  .text-saffron-deep {
+    color: oklch(var(--saffron-deep));
+  }
+  .text-terracotta {
+    color: oklch(var(--terracotta));
+  }
+  .text-forest {
+    color: oklch(var(--forest));
+  }
+  .text-forest-light {
+    color: oklch(var(--forest-light));
+  }
+  .text-warm-brown {
+    color: oklch(var(--warm-brown));
+  }
+  .bg-saffron {
+    background-color: oklch(var(--saffron));
+  }
+  .bg-saffron-deep {
+    background-color: oklch(var(--saffron-deep));
+  }
+  .bg-terracotta {
+    background-color: oklch(var(--terracotta));
+  }
+  .bg-cream {
+    background-color: oklch(var(--cream));
+  }
+  .bg-cream-dark {
+    background-color: oklch(var(--cream-dark));
+  }
+  .bg-forest {
+    background-color: oklch(var(--forest));
+  }
+  .bg-forest-light {
+    background-color: oklch(var(--forest-light));
+  }
+  .bg-warm-brown {
+    background-color: oklch(var(--warm-brown));
+  }
+  .border-saffron {
+    border-color: oklch(var(--saffron));
+  }
+  .border-terracotta {
+    border-color: oklch(var(--terracotta));
+  }
+  .border-forest {
+    border-color: oklch(var(--forest));
+  }
+  .hover\:bg-saffron-deep:hover {
+    background-color: oklch(var(--saffron-deep));
+  }
+  .hover\:text-saffron:hover {
+    color: oklch(var(--saffron));
+  }
+  .hover\:border-saffron:hover {
+    border-color: oklch(var(--saffron));
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "One-page website for an NGO named 'Archak Seva'.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Green bubble-text wordmark reading 'ARCHAK' on a transparent/white background, matching the uploaded IMG_5709.jpeg style (logo.dim_300x120.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-website-for-the-ngo-archak-seva-with-the-following-sections-hero-organization-name-tagline-and-call-to-action-button-about-us-mission-and-vision-our-work-programs-key-initiatives-or-programs-impact-statistics-or-achievements-get-involved-volunteer-donate-section-and-contact-address-email-phone-and-a-simple-contact-form",
+      "title": "Create a single-page website for the NGO 'Archak Seva' with the following sections: Hero (organization name, tagline, and call-to-action button), About Us (mission and vision), Our Work/Programs (key initiatives or programs), Impact (statistics or achievements), Get Involved (volunteer/donate section), and Contact (address, email, phone, and a simple contact form).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-warm-earthy-visual-theme-using-colors-like-deep-saffron-terracotta-cream-off-white-and-forest-green-with-clean-serif-sans-serif-typography-pairing-to-evoke-trust-community-and-service-enforce-this-design-system-consistently-across-all-sections-including-buttons-headings-backgrounds-and-icons",
+      "title": "Apply a warm, earthy visual theme — using colors like deep saffron, terracotta, cream/off-white, and forest green — with clean serif/sans-serif typography pairing to evoke trust, community, and service. Enforce this design system consistently across all sections including buttons, headings, backgrounds, and icons.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-and-display-a-hero-banner-image-and-a-logo-emblem-image-for-archak-seva-rendered-as-static-assets-from-frontend-public-assets-generated-use-the-hero-image-as-the-full-width-background-of-the-hero-section-and-the-logo-in-the-navigation-bar",
+      "title": "Generate and display a hero banner image and a logo/emblem image for Archak Seva, rendered as static assets from frontend/public/assets/generated. Use the hero image as the full-width background of the Hero section and the logo in the navigation bar.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-existing-generated-logo-emblem-in-the-navigation-bar-and-footer-with-the-user-provided-archak-logo-image-save-the-uploaded-image-as-a-static-asset-at-frontend-public-assets-generated-logo-dim-300x120-png-and-update-the-img-src-references-in-navigation-tsx-and-footer-tsx-to-point-to-this-new-file",
+      "title": "Replace the existing generated logo/emblem in the Navigation bar and Footer with the user-provided 'ARCHAK' logo image. Save the uploaded image as a static asset at frontend/public/assets/generated/logo.dim_300x120.png and update the <img> src references in Navigation.tsx and Footer.tsx to point to this new file.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "One-page NGO website for Archak Seva",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Update/replace the logo with a user-provided image",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Archak Seva",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

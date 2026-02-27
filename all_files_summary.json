@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend entry point with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report documenting the replacement of the generated logo with the ARCHAK logo image in Navigation.tsx and Footer.tsx, referencing the static asset path.",
+  "frontend-file-summaries.txt": "JSON document containing one-sentence summaries of all frontend source files, describing their purpose and key contents.",
+  "frontend/index.css": "Global Tailwind CSS entry file defining OKLCH-based CSS custom properties for light and dark color themes including backgrounds, foregrounds, and chart colors.",
+  "frontend/index.html": "HTML entry point for the React app, setting the page title to 'Archak Seva' and mounting the app at the #root div.",
+  "frontend/src/App.tsx": "Root React component that assembles the full single-page layout by composing Navigation, all content sections, and Footer.",
+  "frontend/src/components/AboutSection.tsx": "About section component presenting Archak Seva's founding story, mission, vision, and values using a two-column layout with icon cards and topic tags.",
+  "frontend/src/components/ContactSection.tsx": "Contact section with an info panel showing address, phone, email, and hours, plus a controlled form with simulated submission and success state.",
+  "frontend/src/components/Footer.tsx": "Full-page footer with the ARCHAK logo (brightness-inverted), social media icons, three link columns, dynamic copyright year, and a scroll-to-top button.",
+  "frontend/src/components/GetInvolvedSection.tsx": "Get Involved section rendering four color-coded action cards (Donate, Volunteer, Partner, Share) that scroll to the contact section on click.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section for the Archak Seva NGO site with a background image, gradient overlays, Sanskrit tagline, and two CTA buttons that smooth-scroll to other sections.",
+  "frontend/src/components/ImpactSection.tsx": "Displays four animated count-up stat cards (lives impacted, villages reached, years of service, partners) that trigger when the section enters the viewport via IntersectionObserver.",
+  "frontend/src/components/Navigation.tsx": "Fixed top navigation bar with logo, smooth-scroll links, and a 'Donate Now' CTA; switches from transparent to a solid cream background on scroll and includes a collapsible mobile menu.",
+  "frontend/src/components/ProgramsSection.tsx": "Renders a 3-column grid of six program cards (education, healthcare, women empowerment, environment, shelter, livelihood) with color-coded icons, descriptions, and stat badges.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and caches an ICP backend actor (anonymous or authenticated) using React Query, and invalidates dependent queries whenever the actor instance changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an Internet Identity authentication context (login, clear, status flags, identity) via a React context provider backed by DFINITY's AuthClient, with idle handling disabled by default.",
+  "frontend/src/index.css": "Global CSS file that imports Google Fonts (Playfair Display, Inter), sets up Tailwind directives, and defines a warm earthy design system (saffron, terracotta, cream, forest green) via CSS custom properties for both light and dark modes, plus utility classes.",
+  "frontend/src/main.tsx": "React app entry point that mounts the root component wrapped with QueryClientProvider (React Query) and InternetIdentityProvider for authentication context.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the default theme with custom fonts, OKLCH-based color tokens (saffron, terracotta, cream, forest, warm-brown), border radii, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Project state manifest (version 5) tracking existing features and pending requests for the Archak Seva NGO single-page website, including design system, hero image, and logo replacement requirements."
+}

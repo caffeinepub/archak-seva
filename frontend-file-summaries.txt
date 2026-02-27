@@ -1,0 +1,13 @@
+{
+  "frontend/src/index.css": "Global stylesheet defining the warm earthy OKLCH color system (saffron, terracotta, cream, forest green) with Playfair Display serif and Inter sans-serif fonts, plus utility classes for all custom color tokens.",
+  "frontend/tailwind.config.js": "Extended Tailwind config adding custom font families (Playfair Display, Inter), semantic color tokens (saffron, terracotta, cream, forest, warm-brown), custom border radii, warm box shadows, and fade-up animation keyframes.",
+  "frontend/src/App.tsx": "Root application component that composes the full single-page layout: Navigation, HeroSection, AboutSection, ProgramsSection, ImpactSection, GetInvolvedSection, ContactSection, and Footer.",
+  "frontend/src/components/Navigation.tsx": "Sticky navigation bar with the new ARCHAK wordmark logo image (logo.dim_300x120.png), smooth-scroll links to all sections, a \"Donate Now\" CTA button, scroll-aware background transition, and a responsive mobile hamburger menu.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section with the generated background image, warm gradient overlay, \"Archak Seva\" headline, Sanskrit tagline, descriptive copy, and two CTA buttons with smooth scroll.",
+  "frontend/src/components/AboutSection.tsx": "About Us section presenting the organization's story, mission, vision, and values in a two-column layout with icon cards and topic tags.",
+  "frontend/src/components/ProgramsSection.tsx": "Programs section displaying six initiative cards (Shiksha Jyoti, Arogya Seva, Shakti Mahila, Harit Bhumi, Aashray, Jeevika) in a responsive grid with color-coded icons and impact stats.",
+  "frontend/src/components/ImpactSection.tsx": "Impact section with animated count-up statistics (18,000+ lives, 120+ villages, 14 years, 50+ partners) triggered by IntersectionObserver, plus a beneficiary testimonial quote block.",
+  "frontend/src/components/GetInvolvedSection.tsx": "Get Involved section with four action cards (Donate, Volunteer, Partner, Share) and a gradient banner CTA, all linking to the contact section.",
+  "frontend/src/components/ContactSection.tsx": "Contact section with an info panel (address, phone, email, hours, NGO certifications) and a controlled contact form (name, email, subject, message) with loading state and success confirmation.",
+  "frontend/src/components/Footer.tsx": "Full footer with the new ARCHAK wordmark logo (logo.dim_300x120.png, inverted to white for dark background), tagline, social media links, three link columns, copyright line with dynamic year, and caffeine.ai attribution with UTM tracking."
+}

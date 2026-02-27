@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-replace-the-existing-generated-logo-emblem-in-the-navigation-bar-and-footer-with-the-user-provided-archak-logo-image-save-the-uploaded-image-as-a-static-asset-at-frontend-public-assets-generated-logo-dim-300x120-png-and-update-the-img-src-references-in-navigation-tsx-and-footer-tsx-to-point-to-this-new-file",
+      "featureTitle": "Replace the existing generated logo/emblem in the Navigation bar and Footer with the user-provided 'ARCHAK' logo image. Save the uploaded image as a static asset at frontend/public/assets/generated/logo.dim_300x120.png and update the <img> src references in Navigation.tsx and Footer.tsx to point to this new file.",
+      "files": [
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Navigation.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
